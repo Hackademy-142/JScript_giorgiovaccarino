@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>aprire console per controllare js</h1>
+    <h2>esercizio 1</h2>
+    <code>
+        let a = 1;
+        let b = 2;
+        let c = 3;
+        let d = 4;
+        let e = 5;
+
+        let somma = a + b + c + d + e;
+        let media = somma / 5
+
+        console.log(`la somma tra i numeri equivale a ${somma} e la media risulta ${media}`)
+    </code>
+    <h2>esercizio 2</h2>
+    <code>
+        let annoNascita = 1994;
+        let annoCorrente = 2024;
+
+        let etá = annoCorrente - annoNascita;
+        let to100 = 100 - etá;
+
+        console.log(`hai ${etá} anni e ti mancano ${to100} anni per compierne 100`)
+    </code>
+    <h2>esercizio 3</h2>
+    <code>
+        let totGatti = 44;
+        let lenFila = 6;
+
+        let restoGatti = totGatti % lenFila;
+        let fileGatti = (totGatti - restoGatti) / lenFila;
+        let gattiMancanti = lenFila - restoGatti;
+
+        console.log(`Ci sono ${fileGatti} file di gatti e ne mancano ${gattiMancanti} per una nuova fila, con un avanzo di ${restoGatti}`)
+    </code>
+    <h2>EXTRA</h2>
+    <code>
+        const temps = [10, -2, 31, 22, 15, -6, 7];
+        let max = -100;
+
+        for (let i=0; i < temps.length; i++) {
+            if (temps[i] > max) {
+                max = temps[i];
+            }
+        }
+
+        let min = max;
+
+        for (let i=0; i < temps.length; i++) {
+            if (temps[i] < min) {
+                min = temps[i];
+            }
+        }
+
+        console.log(`La temperatura piu’ calda e’ ${max} quella piu’ fredda ${min}`)
+    </code>
+    <script src="master.js"></script>
+</body>
+
+</html>
