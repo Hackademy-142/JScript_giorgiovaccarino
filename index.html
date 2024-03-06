@@ -46,17 +46,17 @@
     <h2>EXTRA</h2>
     <code>
         const temps = [10, -2, 31, 22, 15, -6, 7];
-        let max = -100;
+        let max = temps[0];
 
-        for (let i=0; i < temps.length; i++) {
+        for (let i=1; i < temps.length; i++) {
             if (temps[i] > max) {
                 max = temps[i];
             }
         }
 
-        let min = max;
+        let min = temps[0];
 
-        for (let i=0; i < temps.length; i++) {
+        for (let i=1; i < temps.length; i++) {
             if (temps[i] < min) {
                 min = temps[i];
             }
